@@ -2,7 +2,7 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from database import QuotesDB
-from ui_design import Ui_CollectionOfQuotes  # ← если у тебя класс так называется
+from ui_design import Ui_CollectionOfQuotes
 
 
 class MainWindow(QMainWindow, Ui_CollectionOfQuotes):
