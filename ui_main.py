@@ -16,6 +16,7 @@ class MainWindow(QMainWindow, Ui_CollectionOfQuotes):
         self.tableWidget.setColumnCount(5)
         self.tableWidget.setHorizontalHeaderLabels(['Текст', 'Автор', 'Категория', 'Дата', 'Избранное'])
         self.tableWidget.setSelectionBehavior(QTableWidget.SelectRows)
+        self.categoryComboBox.addItems(['Мотивация', 'Жизнь', 'Любовь', 'Философия', 'Юмор', 'Другое'])
 
         self.addBtn.clicked.connect(self.add_quote)
         self.deleteBtn.clicked.connect(self.delete_quote)
